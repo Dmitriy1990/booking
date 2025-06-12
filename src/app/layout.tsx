@@ -2,18 +2,30 @@ import type { Metadata } from "next";
 import { Manrope } from "next/font/google";
 import "./globals.css";
 
-const manrope = Manrope({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
+const manrope =
+  Manrope(
+    {
+      variable:
+        "--font-marope",
+      subsets:
+        [
+          "latin",
+        ],
+    },
+  );
 
-export const metadata: Metadata = {
-  title: {
-    default: "Travila",
-    template: "%S | Travila",
-  },
-  description: "Booking app",
-};
+export const metadata: Metadata =
+  {
+    title:
+      {
+        default:
+          "Travila",
+        template:
+          "%S | Travila",
+      },
+    description:
+      "Booking app",
+  };
 
 export default function RootLayout({
   children,
@@ -22,7 +34,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${manrope.variable}  antialiased`}>{children}</body>
+      <body
+        className={`${manrope.variable} antialiased`}
+      >
+        {
+          children
+        }
+      </body>
     </html>
   );
 }

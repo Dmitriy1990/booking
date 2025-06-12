@@ -1,3 +1,13 @@
+import { LogoIcon } from "@/assets";
+
 export default function Home() {
-  return <div className=""></div>;
+  return (
+    <div className="">
+      <h1>
+        Home
+        Page
+      </h1>
+      <LogoIcon />
+    </div>
+  );
 }
