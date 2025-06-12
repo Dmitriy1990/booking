@@ -32,44 +32,17 @@ const eslintConfig = [
       unicorn: unicornPlugin,
     },
     rules: {
-      "simple-import-sort/exports": "error",
-      "simple-import-sort/imports": "error",
-      "unicorn/no-array-callback-reference": "off",
-      "unicorn/no-array-for-each": "off",
-      "unicorn/no-array-reduce": "off",
-      "unicorn/prevent-abbreviations": [
-        "error",
-        {
-          allowList: {
-            e2e: true,
-          },
-          replacements: {
-            props: false,
-            ref: false,
-            params: false,
-          },
-        },
-      ],
-    },
-  },
-  {
-    files: ["**/*.ts", "**/*.tsx"],
-    languageOptions: {
-      parser: typescriptEslintParser,
-      parserOptions: {
-        project: "./tsconfig.json",
-      },
-    },
-    rules: {
-      "@typescript-eslint/no-unused-vars": "error",
-      "@typescript-eslint/no-explicit-any": "warn",
-      "unicorn/prefer-module": "off",
-    },
-  },
-  {
-    files: ["**/*.js", "**/*.jsx"],
-    rules: {
-      "unicorn/prefer-module": "off",
+      "react/jsx-props-no-spreading": "off",
+      "react/jsx-indent": "off",
+      "react/jsx-indent-props": "off",
+      "react/require-default-props": "off",
+      "react/function-component-definition": "off",
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "jsx-a11y/anchor-is-valid": "off",
+      "jsx-a11y/interactive-supports-focus": "off",
+      "jsx-a11y/click-events-have-key-events": "off",
+      "no-shadow": "off",
     },
   },
 ];
