@@ -12,7 +12,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: {
     default: "Travila",
-    template: "%S | Travila",
+    template: "%s | Travila",
   },
   description: "Booking app",
   icons: {

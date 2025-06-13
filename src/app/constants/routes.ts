@@ -8,5 +8,5 @@ export const routes = {
     dashboard: "/admin/dashboard",
     room: "/admin/room",
   },
-  signin: "/signin"
+  signin: "/signin",
 };
