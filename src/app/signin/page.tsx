@@ -12,7 +12,7 @@ export default function SignInPage() {
       <div className="bg-white w-96 mx-auto rounded-sm shadow p-8">
         <h1 className="text-4xl font-bold mb-1">Sign In</h1>
         <p className="font-medium mb-5 text-gray-500">
-          Sign In to your account
+          Sign In to your account.
         </p>
         <div className="py-4 text-center">
           <LoginButton />
